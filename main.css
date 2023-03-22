@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+body {
+    background-color: rgb(119, 18, 18);
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 6fr;
+    color: lightgrey;
+    font-family: 'Dancing Script', Calibry;
+    text-align: center;
+    font-size: 24pt;
+    padding-bottom: 10px;
+    padding-top: 15px;
+    background-color: brown;
+}
+
+header img {
+    height: 60px;
+}
+
+.navbar {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-column-gap: 10px;
+    text-align: center;
+    justify-content: center;
+}
+
+.navbar a {
+    font-family: Calibri, Arial, Helvetica, sans-serif;
+    font-size: 12pt;
+    text-decoration: none;
+    padding: 10px 15px 10px 15px;
+    color:lightgrey;
+    background-color: brown;
+    box-shadow: 0 6px 12px 0 black;
+}
+
+.navbar a:hover {
+    background-color: rgb(119, 18, 18);
+    color: white;
+    font-size: 14pt;
+    box-shadow: 0 3px 6px 0 black;
+}
+
+a.active {
+    font-size: 14pt;
+    background-color:rgb(119, 18, 18);
+    color: white;
+    border: 2px solid brown;
+    box-shadow: 0 3px 6px 0 black;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 50px;
+    margin-right: 50px;
+    margin-left: 50px;
+    text-align: left;
+    justify-content: left;
+}
+
+.rightfloat {
+    margin-right: 40px;
+    float: right;
+}
+
+.leftfloat {
+    margin-right: 40px;
+    float: left;
+}
+
+h1 {
+    font-family: Calibri, Arial, Helvetica, sans-serif;
+    font-size: 20pt;
+    font-weight: bold;
+    color: lightgrey;
+    background-color:brown;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 5px;
+    margin-top: 0;
+    box-shadow: 0 3px 6px 0 black;
+}
+
+h2 {
+    font-family: Calibri, Arial, Helvetica, sans-serif;
+    font-size: 18pt;
+    font-weight: normal;
+    color: lightgrey;
+    margin-bottom: 10pt;
+    margin-top: 0;
+}
+
+main p {
+    font-family: Calibri, Arial, Helvetica, sans-serif;
+    font-size: 18pt;
+    color: whitesmoke;
+    margin-top: 40px;
+}
+
+.maintext {
+    font-style: normal;
+    color: white;
+    font-family: Calibri, Arial, Helvetica, sans-serif;
+    text-align: left;
+    font-size: 14pt;
+    line-height: 150%;
+    margin-top: 0;
+}
+
+.maintext li {
+    margin-bottom: 10pt;
+}
+
+.gallery img {
+    height: 300px;
+    border: 1pt solid white;
+    margin-bottom: 40px;
+    box-shadow: 0 6px 12px 0 black;
+}
+
+button {
+    padding: 5px 30px 5px 30px;
+    margin-top: 40px;
+    border: none;
+    font-family: Calibri, Arial, Helvetica, sans-serif;
+    font-size: 16pt;
+    background-color: brown;
+    color: white;
+}
+
+button:hover {
+    background-color:rgb(105, 14, 14);
+}
+
+button:active {
+background-color: rgb(105, 14, 14);
+box-shadow: 1px 1px black;
+transform: translateY(3px);
+}
+
+#scheduleTable, td {
+    font-family: Calibri, Arial, Helvetica, sans-serif;
+    font-size: 12pt;
+    border: 1px solid lightgrey;
+    border-collapse: collapse;
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+    vertical-align: center;
+    background-color: brown;
+    color: white;
+    margin-bottom: 20px;
+}
+
+td:hover, th:hover {
+    background-color:rgb(119, 18, 18);
+}
+
+th {
+    font-family: Calibri, Arial, Helvetica, sans-serif;
+    font-size: 14pt;
+    border: 1px solid lightgrey;
+    padding: 10px 10px 10px 10px;
+    width: 100px;
+    background-color: brown;
+    color: white;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 2%;
+    grid-row-gap: 5%;
+}
+
+.grid img {
+    width: 60px;
+}
+
+.grid > div {
+    color:white;
+    background: brown;
+    padding: 20px;
+    text-align: center;
+    font-family: Calibri, Arial, Helvetica, sans-serif;
+    font-size: 14pt;
+    border-radius: 5px;
+    margin-top: 20px;
+    box-shadow: 0 3px 6px 0 black;
+}
+
+input[type=text], select, textarea {
+    font-family: Calibri, Arial, Helvetica, sans-serif;
+    font-size: 14pt;
+    background-color: brown;
+    color: white;
+    width: 100%;
+    padding: 10px 15px;
+    margin: 10px 0;
+    display: inline-block;
+    border: 1px solid lightgrey;
+    box-sizing: border-box;
+    border-radius: 2px;
+    resize: none;
+  }
+  
+  textarea {
+    height: 250px;
+  }
+
+  input[type=submit] {
+    width: 50%;
+    background-color: brown;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: rgb(105, 14, 14);
+  }
+
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    color: lightgrey;
+    background-color: brown;
+    padding: 15px 0 15px 0;
+    font-family: Calibri, Arial, Helvetica, sans-serif;
+    font-size: 14pt;
+    margin: 70px 0 0 0;
+    box-shadow: 0 -6px 12px 0 black;
+}
+
+footer a, p a {
+    text-decoration: none;
+    color: lightgrey;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.new-line {
+    width: 100%;
+}
+
+footer img {
+    height: 30px;
+    margin: 0 5px 0 10px;
+}
+
+footer a:hover, p a:hover {
+    color: white;
+}
+
+#copyright {
+    font-size: 10pt;
+    color: white;
+}
